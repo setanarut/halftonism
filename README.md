@@ -11,7 +11,7 @@ Artistic halftone generation library
 pip install git+https://github.com/setanarut/halftonism
 ```
 
-#### Example
+## Example
 
 ```python
 from halftonism import Project
