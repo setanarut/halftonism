@@ -1,0 +1,22 @@
+#!/usr/local/bin/env python
+
+import sys
+from pathlib import Path
+import numpy as np
+from PIL import Image
+
+from halftonism.utils import apply_gradient_map, gradient
+
+# $ grad 8 ~/Desktop/dem.jpg
+
+
+period = sys.argv[1]
+file_path = sys.argv[2]
+
+path = Path(file_path)
+path = path.with_name(path.stem + "_" + str(period) + path.suffix)
+
+im = Image.open(file_path)
+im = apply_gradient_map(im, gradient(int(period)))
+im.save(path)
+print("image saved: " + str(path))
