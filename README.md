@@ -66,8 +66,8 @@ from halftonism.utils import gradient_vstack, gradient
 stack = gradient_vstack(gradient(1, "sawtooth"), 32)
 for repeat in range(2, 17):
     stack = np.vstack((stack, gradient_vstack(gradient(repeat, "sawtooth"), 32)))
-    im = Image.fromarray(stack)
-    im.rotate(90, expand=True).save("gradient_repeats.png")
+im = Image.fromarray(stack)
+im.rotate(90, expand=True).save("gradient_repeats.png")
 
 ```
 
