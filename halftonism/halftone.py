@@ -96,7 +96,7 @@ class Project:
             Image.fromarray(self.get_frame(i)).save("frames/" + str(i) + ".png")
 
     def save_halftone_patterns(self):
-        """Saves heigtmap frames to folder"""
+        """Saves heigthmap frames to folder"""
         folder = "dem_frames"
         if not path.exists(folder):
             mkdir(folder)
