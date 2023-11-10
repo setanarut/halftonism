@@ -1,4 +1,6 @@
-#!/usr/local/bin/env python
+#!python3
+
+# apply gradient map to image with repeats
 
 import sys
 from pathlib import Path

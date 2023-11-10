@@ -1,0 +1,36 @@
+#!python3
+
+from pathlib import Path
+import sys
+from pyora import Project
+from PIL import Image
+
+
+# make ora from images in folder
+
+layers = []
+arg = sys.argv[1]
+input_path = None
+
+if arg == ".":
+    input_path = Path.cwd()
+else:
+    input_path = Path(arg)
+
+if input_path.exists() == False:
+    raise FileExistsError
+else:
+    if input_path.is_dir() == False:
+        raise NotADirectoryError
+
+images = Path(input_path).glob("*.png")
+for image in images:
+    layers.append(Image.open(image))
+
+
+project = Project.new(*layers[0].size)
+layers.reverse()
+for i in range(len(layers)):
+    project.add_layer(layers[i])
+
+project.save(str(input_path) + "/output.ora")

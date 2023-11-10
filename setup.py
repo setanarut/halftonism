@@ -8,7 +8,7 @@ setup(
     python_requires=">=3.11.5",
     description="Artistic halftone generation library",
     url="https://github.com/setanarut/halftonism",
-    scripts=["scripts/grad"],
+    scripts=["scripts/grad", "scripts/folder2ora"],
     author="setanarut",
     license="GPL-3.0",
     packages=["halftonism"],
