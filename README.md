@@ -23,9 +23,30 @@ p.save_GIF("example.gif", scale=0.25, miliseconds=70, colors=30, resample=3)
 ## Tutorial
 
 ### Preparing the ORA file
-You can open the example.ora file in [example](./example/) folder with the [Krita](https://docs.krita.org/en/general_concepts/file_formats/file_ora.html). ([Openraster](https://www.openraster.org/) format). In the example you can see the color layers obtained using [fastLayerDecomposition](https://github.com/CraGL/fastLayerDecomposition) repository. Alternatively you can decompose and save image as an ORA file with the [decompose](https://github.com/setanarut/decompose) package. [decompose](https://github.com/setanarut/decompose) package separates very quickly using pytorch but the colors are  inaccurate a little bit depending on the palette. Also you can paint it by hand without layer decompositing. Play around with layer orders and alpha levels for a more color balanced halftone outputs.
 
 ![Krita ORA Screenshot](./assets/krita_ORA_SS.jpg)
+
+You can open the example.ora file in [example](./example/) folder with the [Krita](https://docs.krita.org/en/general_concepts/file_formats/file_ora.html). ([Openraster](https://www.openraster.org/) format). In the example you can see the color layers obtained using [fastLayerDecomposition](https://github.com/CraGL/fastLayerDecomposition) repository. After installing the halftonism package, the `folder2ora` command line tool is installed. Using this, you can convert the folder full of PNG layers obtained with [fastLayerDecomposition](https://github.com/CraGL/fastLayerDecomposition) into an ORA file. Saves it with the name `output.ora`.
+
+```bash
+$ folder2ora ~/Downloads/layers_folder
+
+# saved -> ~/Downloads/layers_folder/output.ora
+```
+
+Alternatively you can decompose and save image as an ORA file with the [decompose](https://github.com/setanarut/decompose) package. [decompose](https://github.com/setanarut/decompose) package separates very quickly using pytorch but the colors are  inaccurate a little bit depending on the palette. 
+
+```bash
+$ decomp ~/Desktop/img.png
+# Decomposer mask generation...
+# Decomposer processing alpha layers...
+# Decomposer Done!
+# ORA saved: img.ora
+# 7
+# Palette saved: img_palette.png
+```
+
+Also you can paint it by hand without layer decompositing. Play around with layer orders and alpha levels for a more color balanced halftone outputs.  
 
 #### ORA Layer Structure
 
