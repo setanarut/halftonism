@@ -23,8 +23,7 @@ p.save_GIF("example.gif", scale=0.25, miliseconds=70, colors=30, resample=3)
 ## Tutorial
 
 ### Preparing the ORA file
-You can open the example.ora file in [example](./example/) folder with the [Krita](https://docs.krita.org/en/general_concepts/file_formats/file_ora.html). ([Openraster](https://www.openraster.org/) format). In the example you can see the color layers obtained using [fastLayerDecomposition](https://github.com/CraGL/fastLayerDecomposition) repository. It can also be done by hand painting without color layer decomposition.
-Play around with layer orders and alpha levels for a more color balanced halftone outputs.
+You can open the example.ora file in [example](./example/) folder with the [Krita](https://docs.krita.org/en/general_concepts/file_formats/file_ora.html). ([Openraster](https://www.openraster.org/) format). In the example you can see the color layers obtained using [fastLayerDecomposition](https://github.com/CraGL/fastLayerDecomposition) repository. Alternatively you can decompose and save image as an ORA file with the [decompose](https://github.com/setanarut/decompose) package. [decompose](https://github.com/setanarut/decompose) package separates very quickly using pytorch but the colors are  inaccurate a little bit depending on the palette. Also you can paint it by hand without layer decompositing. Play around with layer orders and alpha levels for a more color balanced halftone outputs.
 
 ![Krita ORA Screenshot](./assets/krita_ORA_SS.jpg)
 
