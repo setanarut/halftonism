@@ -75,12 +75,19 @@ def _most_common_color_RGBA(image_RGBA: np.ndarray):
 
 
 def save_palette_as_image(palette: list[tuple], image_path: str):
-    im = Image.new("RGB", (len(palette) + 2, 3), (128, 128, 128))
+    im = Image.new("RGB", (len(palette), 1))
     for index, color in enumerate(palette):
-        im.putpixel((index + 1, 1), color)
-    im = im.resize((int(im.width * 32), int(im.height * 32)), Image.NEAREST)
+        im.putpixel((index, 0), color)
+    im = im.resize((int(im.width * 50), int(im.height * 50)), Image.NEAREST)
     im.save(image_path)
 
+def image_to_palette(image_path):
+    im = Image.open(image_path).convert("RGB")
+    im = im.resize((im.width // im.height, 1), resample=0)
+    p = []
+    for i in range(im.width):
+        p.append(im.getpixel((i, 0)))
+    return p
 
 def make_gradient_frames(
     frame_skipping=1, repeat=16, waveform="sawtooth"
