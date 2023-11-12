@@ -106,6 +106,6 @@ Resampling example with `NEAREST` on the left and `BICUBIC` on the right. (scale
 ![downsample](./assets/downsample.png)
 
 ```python
-p.save_GIF("output.gif", scale=0.25, resample=Resampling.BICUBIC)
+p.save_GIF("output.gif", scale=0.25, resample=Image.BICUBIC)
 p.save_frame(0, "01_frame.png", scale=0.25., resample=3)
 ```
