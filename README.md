@@ -1,5 +1,7 @@
 # Halftonism
 
+> ! Moved to -> https://codeberg.org/setanarut/halftonism
+
 Artistic halftone generation library
 
 ![Krita ORA Screenshot](./example/example.gif)
