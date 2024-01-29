@@ -1,7 +1,5 @@
 # Halftonism
 
-> ! Moved to -> https://codeberg.org/setanarut/halftonism
-
 Artistic halftone generation library
 
 ![Krita ORA Screenshot](./example/example.gif)
@@ -58,7 +56,7 @@ Before processing the ORA file with Python, you have to follow the template belo
 
 2. The bottom background layer (base color) must be solid color.
 
-3. There should be a grayscale heightmap at the top layer for halftone patterns. Top layer can be a computer generated heightmap ([Hydraulic-Erosion](https://github.com/dandrino/terrain-erosion-3-ways#simulation), Mandelbrot fractals) or real [DEM heightmaps](https://tangrams.github.io/heightmapper/) or any suitable grayscale gradient.  
+3. There should be a grayscale fractal heightmap at the top layer for halftone patterns. Top layer can be a computer generated heightmap https://github.com/TadaTeruki/fastlem, Mandelbrot fractals) or real [DEM heightmaps](https://tangrams.github.io/heightmapper/) or any suitable grayscale gradient.  
 
 
 ### ORA processing with halftonism package
