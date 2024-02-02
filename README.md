@@ -56,8 +56,14 @@ Before processing the ORA file with Python, you have to follow the template belo
 
 2. The bottom background layer (base color) must be solid color.
 
-3. There should be a grayscale fractal heightmap at the top layer for halftone patterns. Top layer can be a computer generated heightmap https://github.com/TadaTeruki/fastlem, Mandelbrot fractals) or real [DEM heightmaps](https://tangrams.github.io/heightmapper/) or any suitable grayscale gradient.  
+3. There should be a grayscale fractal heightmap at the top layer for halftone patterns. Top layer can be a computer generated heightmaps or [real DEM images](https://tangrams.github.io/heightmapper/) or any suitable grayscale gradient.
 
+#### Some procedural techniques.
+
+- Procedural terrains based on simplified landscape evolution model (LEM) [github.com/TadaTeruki/fastlem-random-terrain](https://github.com/TadaTeruki/fastlem-random-terrain)
+- Diffusion-limited aggregation
+- Mandelbrot Fractals
+- Hydraulic erosion simulation across a heightfield (Noise)
 
 ### ORA processing with halftonism package
 
