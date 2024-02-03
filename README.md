@@ -65,7 +65,7 @@ Before processing the ORA file with Python, you have to follow the template belo
 - Mandelbrot Fractals
 - Hydraulic erosion simulation across a heightfield (Noise)
 
-##### An Mandelbrot fractal example
+##### Mandelbrot fractal example
 
 ![example2](https://github.com/setanarut/halftonism/assets/36481442/7dcb6640-3142-44c8-9ee1-448edbb1658b)
 
