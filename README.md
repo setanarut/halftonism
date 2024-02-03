@@ -65,6 +65,11 @@ Before processing the ORA file with Python, you have to follow the template belo
 - Mandelbrot Fractals
 - Hydraulic erosion simulation across a heightfield (Noise)
 
+##### An Mandelbrot fractal example
+
+![example2](https://github.com/setanarut/halftonism/assets/36481442/7dcb6640-3142-44c8-9ee1-448edbb1658b)
+
+
 ### ORA processing with halftonism package
 
 Halftone animation is created with 256 pixels linear grayscale gradient [cycling](https://en.wikipedia.org/wiki/Color_cycling), also known as palette shifting or palette animation. The halftone pattern and color layer are mixed with the [*Hard Mix*]([https://](http://www.simplefilter.de/en/basics/mixmods.html)) blending mode (mix *halftone gradient pattern* and *color layer* by 50%. If the alpha value is greater than 128, set the color to 255, otherwise set the color to 0).  
