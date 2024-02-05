@@ -2,7 +2,7 @@
 
 Artistic halftone generation library
 
-![Krita ORA Screenshot](./example/example.gif)
+![example_6_tri_fs2_m70](https://github.com/setanarut/halftonism/assets/36481442/69a9578e-0e4a-4ff7-a376-e2dfc68f94ac)
 
 
 ## Installation
@@ -11,7 +11,7 @@ Artistic halftone generation library
 pip install git+https://github.com/setanarut/halftonism
 ```
 
-## Example
+## Tutorial
 
 ```python
 from halftonism import Project
@@ -20,7 +20,8 @@ p = Project("example.ora", repeat=16, waveform="triangle")
 p.save_GIF("example.gif", scale=0.25, miliseconds=70, colors=30, resample=3)
 ```
 
-## Tutorial
+![Krita ORA Screenshot](./example/example.gif)
+
 
 ### Preparing the ORA file
 
