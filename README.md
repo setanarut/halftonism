@@ -2,7 +2,7 @@
 
 Artistic halftone generation library
 
-![example_6_tri_fs2_m70](https://github.com/setanarut/halftonism/assets/36481442/69a9578e-0e4a-4ff7-a376-e2dfc68f94ac)
+![example_6_tri_fs2_m70](./assets/eyeswide.gif)
 
 
 ## Installation
@@ -66,9 +66,13 @@ Before processing the ORA file with Python, you have to follow the template belo
 - Mandelbrot Fractals
 - Hydraulic erosion simulation across a heightfield (Noise)
 
+##### Fastlem terrain fractal example
+
+![fastlem](./assets/fastlem.gif)
+
 ##### Mandelbrot fractal example
 
-![example2](https://github.com/setanarut/halftonism/assets/36481442/7dcb6640-3142-44c8-9ee1-448edbb1658b)
+![mandel](./assets/mandel.gif)
 
 
 ### ORA processing with halftonism package
