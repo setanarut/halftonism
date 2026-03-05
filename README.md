@@ -1,5 +1,8 @@
 # Halftonism
 
+> [!NOTE]
+> This [Krita plugin](https://github.com/setanarut/halftonizm) is the successor to this repo.
+
 Artistic halftone generation library
 
 ![example_6_tri_fs2_m70](./assets/eyeswide.gif)
