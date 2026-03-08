@@ -1,7 +1,7 @@
 # Halftonism
 
 > [!NOTE]
-> [Halftonizm Krita plugin](https://github.com/setanarut/halftonizm) is the successor to this repo.
+> This repository is outdated. The [Halftonizm](https://github.com/setanarut/halftonizm) Krita plugin and [LayerBuilder](https://github.com/setanarut/layerbuilder-app) are the successors to this package.
 
 Artistic halftone generation library
 
